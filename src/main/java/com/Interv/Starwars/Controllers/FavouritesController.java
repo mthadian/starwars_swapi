@@ -15,6 +15,11 @@ import org.springframework.web.bind.annotation.RestController;
 import com.Interv.Starwars.Models.Favourites;
 import com.Interv.Starwars.Repositories.FavouritesRepository;
 
+/**
+*
+* @author PMMuthama
+*/
+
 @RestController
 public class FavouritesController
 {
@@ -46,7 +51,7 @@ public class FavouritesController
 	@DeleteMapping("/api/sw/swid/{starwarId}")
 	public ResponseEntity<?> deleteFavourite(@PathVariable("starwarId") int starwarId) throws Exception
 	{
-		Favourites favourite=new Favourites();
+		
 		if(!favouritesRepository.findByStarwarId(starwarId).isPresent())
 		{
 			throw new Exception("This favourite doesnt exist");
@@ -60,7 +65,7 @@ public class FavouritesController
 	@GetMapping("api/sw/swid/{starwarId}")
 	public ResponseEntity<?> findById(@PathVariable("starwarId") int starwarId) throws Exception
 	{
-		Favourites favourite=new Favourites();
+		
 		List<Favourites> list_Favourite=new ArrayList<Favourites>();
 		if(favouritesRepository.findByStarwarId(starwarId).isPresent())
 		{

@@ -31,6 +31,7 @@ public class FavouritesController
 	public ResponseEntity<?> addFavourite(@PathVariable("starwarId") int starwarId) throws Exception
 	{
 		Favourites favourite=new Favourites();
+		
 		if(favouritesRepository.findByStarwarId(starwarId).isPresent())
 		{
 			//favouritesRepository.deleteByStarwarId(starwarId);
@@ -54,7 +55,8 @@ public class FavouritesController
 		
 		if(!favouritesRepository.findByStarwarId(starwarId).isPresent())
 		{
-			throw new Exception("This favourite doesnt exist");
+			
+			throw new Exception("This favourite doesn't exist");
 		}
 		
 		favouritesRepository.deleteByStarwarId(starwarId);

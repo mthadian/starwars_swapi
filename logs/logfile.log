@@ -20,7 +20,7 @@
 2020-05-13 20:29:33.476  INFO 6216 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
 2020-05-13 20:29:34.302  INFO 6216 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
 2020-05-13 20:29:34.306  INFO 6216 --- [main] com.Interv.Starwars.StarwarsApplication  : Started StarwarsApplication in 6.172 seconds (JVM running for 7.207)
-2020-05-13 20:32:59.054  INFO 6216 --- [RMI TCP Connection(14)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-05-13 20:32:59.054  INFO 6216 --- [RMI TCP Connection(14)-127.0.0.1] inMXBeanRegistrar$SptringApplicationAdmin : Application shutdown requested.
 2020-05-13 20:32:59.059  INFO 6216 --- [RMI TCP Connection(14)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
 2020-05-13 20:32:59.059  INFO 6216 --- [RMI TCP Connection(14)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2020-05-13 20:32:59.063  INFO 6216 --- [RMI TCP Connection(14)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
